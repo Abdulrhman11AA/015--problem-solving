@@ -45,3 +45,28 @@ int main() {
 
 	return 0;
 }
+/*
+Another way 
+
+#include <iostream>
+using namespace std;
+int main() {
+ 
+	char mat[5][5];
+	int counter=0,one=0;
+	for (int i = 0; i <5; i++) {
+		for (int j = 0; j < 5; j++) {
+			cin >> mat[i][j];
+			counter++;
+			if (mat[i][j] == '1') {
+				one = counter;
+			}
+		}
+	}
+	if (one == 13)cout << "0";
+	return 0;
+	(one > 13) ? cout << one - 13 :  cout << 13 - one;
+ 
+	return 0;
+}
+*/
